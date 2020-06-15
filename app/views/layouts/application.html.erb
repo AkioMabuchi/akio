@@ -5,11 +5,33 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
+  <header>
+    <a href="/" class="header-logo">
+      <img src="/assets/HeaderLogo.png" alt="">
+    </a>
+    <ul class="header-menu">
+      <li>
+        <a href="/">
+          トップ
+        </a>
+      </li>
+      <li>
+        <a href="/">
+          ブログ
+        </a>
+      </li>
+      <li>
+        <a href="/">
+          作品集
+        </a>
+      </li>
+    </ul>
+  </header>
     <%= yield %>
   </body>
 </html>
